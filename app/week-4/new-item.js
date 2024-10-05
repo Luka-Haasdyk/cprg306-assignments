@@ -1,13 +1,13 @@
-export default function NewItemFunction ({currentCount, incrementCounterFunction, decrementCounterFunction}) {
+export default function NewItemFunction ({currentQuantity, incrementFunction, decrementFunction}) {
 
     let btnIncrementDisable = false;
     let btnDecrementDisable = false;
 
-    if (currentCount >= 20) {
+    if (currentQuantity >= 20) {
         btnIncrementDisable = true;
     }
 
-    if (currentCount <= 1) {
+    if (currentQuantity <= 1) {
         btnDecrementDisable = true;
     }
 
@@ -15,9 +15,9 @@ export default function NewItemFunction ({currentCount, incrementCounterFunction
 
     return (
         <div className=" flex justify-center items-center bg-slate-100 p-1 text-black max-w-fit mx-auto">
-            <p className="inline-block w-14 ml-1">{currentCount}</p>
-            <button className={btnStyle} disabled={btnDecrementDisable} onClick={decrementCounterFunction} > - </button>
-            <button className={btnStyle} disabled={btnIncrementDisable} onClick={incrementCounterFunction}> + </button>     
+            <p className="inline-block w-14 ml-1">{currentQuantity}</p>
+            <button className={btnStyle} disabled={btnDecrementDisable} onClick={decrementFunction} > - </button>
+            <button className={btnStyle} disabled={btnIncrementDisable} onClick={incrementFunction}> + </button>     
         </div>
     );
 };
