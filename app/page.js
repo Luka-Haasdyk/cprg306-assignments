@@ -6,6 +6,7 @@ export default function Home() {
         <h1 style={{ fontSize: 60 }}> CPRG306: Web Development 2 - Assignments </h1>
         <Link href="./week-2/" className="underline text-cyan-400 hover:text-cyan-800 block"> Week 2 Assignment </Link>
         <Link href="./week-3/" className="underline text-cyan-400 hover:text-cyan-800 block"> Week 3 Assignment </Link>
+        <Link href="./week-4/" className="underline text-cyan-400 hover:text-cyan-800 block"> Week 3 Assignment </Link>
     </main>
   );
 }
