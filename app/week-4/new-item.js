@@ -1,4 +1,4 @@
-export default function NewItemFunction ({currentCount, incrementCounterFunction, decrementCounterFunction, resetCounterFunction}) {
+export default function NewItemFunction ({currentCount, incrementCounterFunction, decrementCounterFunction}) {
 
     let btnIncrementDisable = false;
     let btnDecrementDisable = false;
